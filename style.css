@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto mono", sans-serif;
+}
+
+nav{
+  display: flex;
+  padding: 50px;
+  background-color: beige;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul{
+  display: flex;
+  font-size: larger;
+  gap: 30px;
+  font-weight: bold;
+  list-style-type: none;
+  align-items: center;
+  color: black;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+nav ul li::after{
+  display: inline;
+  content: "| ";
+  margin-left: 15px;
+}
+
+nav ul li:last-child::after {
+  content: "";
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.introtxt{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+
+#typed-text {
+  font-size: 4rem;
+  color: yellow;
+  border-right: 2px solid yellow;
+  padding-left: 5px;
+  animation: blink 0.75s step-end infinite;
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent;}
+}
+
+
+
+.about-section {
+  background-color: #111;
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.greeting {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #00aaff; 
+  margin-bottom: 30px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.currently {
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-list {
+  list-style-type: disc;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.AboutSectiontxst, .AboutSectioncodepath {
+  padding-left: 20px;
+}
+
+.txstimg, .codepathimg {
+  width: 300px;
+  float: right;
+}
+
+
+
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; 
+}
+
+.pictures {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.photos {
+  width: 500px;
+  border: 2px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.photos:hover{
+  transform: translateY(-5px);
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.photos p {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
