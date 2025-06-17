@@ -48,6 +48,7 @@ nav ul li:last-child::after {
   position: relative;
   width: 100%;
   overflow: hidden;
+  left: -7px;
 }
 
 .image img{
