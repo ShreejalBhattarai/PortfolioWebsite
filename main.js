@@ -1,4 +1,4 @@
-const words = ["an engineering student", "a cricketer", "an art enthusiast", "a tech savy lad"];
+const words = ["an engineering student", "a son and a brother", "an art enthusiast", "a fellow naive human"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
