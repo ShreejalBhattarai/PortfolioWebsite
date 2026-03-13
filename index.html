@@ -3,45 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shreejal Bhattarai - electrical and computer engineering student.">
   <title>Shreejal Bhattarai</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="photos/logo.png" type="image/png">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1">Blogs</a></li>
-      <li><a href="life.html">Life</a></li>
-      <li><a href="https://github.com/ShreejalBhattarai/PortfolioWebsite/blob/main/ShreejalBhattarai_Resume.pdf">Resume</a></li>
-    </ul>
-  </nav>
+  <!-- Global navigation shared across pages -->
+  <header>
+    <nav>
+      <div class="page-wrapper">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1" target="_blank" rel="noopener">Blogs</a></li>
+          <li><a href="work.html">Work Experience</a></li>
+          <li><a href="life.html">Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Hero with background image and typed intro line -->
+    <section class="image" aria-label="Introduction">
+      <img src="photos/background.jpg" id="image" alt="Abstract background with Shreejal Bhattarai">
+      <div class="introtxt">
+        <span>Hi! I am Shreejal,<br> </span>
+        <span id="typed-text"></span>
+      </div>
+    </section>
 
-  <div class="image">
-    <img src="photos/background.jpg" id="image" style='border:3px solid'/>
-    <div class = "introtxt">
-      <span>Hi! I am Shreejal,<br> </span>
-      <span id ="typed-text"></span>
-    </div>
-  </div>
+    <!-- About blurb and current focus list -->
+    <section class="about-section">
+      <div class="page-wrapper">
+        <h1 class="greeting">Hi there!</h1>
 
+        <p class="about-text">
+          My name is Shreejal Bhattarai. I am a Junior at Texas State University and have developed a keen passion towards computers, logic, and electronics. I am interested in Microprocessors, Digital Design, Analog Design, Microcontrollers, Embedded and Quantum Electronics. 
+        </p>
 
-<footer class="about-section">
-  <h1 class="greeting">Hi there!</h1>
-
-  <p class="about-text">
-    My name is Shreejal Bhattarai. I am a Junior at Texas State University and have developed a keen passion towards computers, logic, and electronics. I am interested in Microprocessors, Digital Design, Analog Design, Microcontrollers, Embedded and Quantum Electronics. 
-  </p>
-
-  <p class="currently">Currently, I am:</p>
-  <ul class="about-list">
-    <li>Conducting research on the electronic characterization of quantum devices, exploring how quantum systems behave at the edges of what we can measure and understand,</li>
-    <li>Continuously expanding my programming skills, picking up new tools and languages that help me bridge the gap between hardware and software,</li>
-    <li>Seeking genuine connections with people who care about building something meaningful, and hoping, in some small way, to leave a positive mark on the lives I cross paths with.</li>
-  </ul>
-
+        <p class="currently">Currently, I am:</p>
+        <ul class="about-list">
+          <li>Conducting research on the electronic characterization of quantum devices, exploring how quantum systems behave at the edges of what we can measure and understand.</li>
+          <li>Continuously expanding my programming skills, picking up new tools and languages that help me bridge the gap between hardware and software.</li>
+          <li>Seeking genuine connections with people who care about building something meaningful, and hoping to leave a positive mark on the lives I cross paths with.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <script src="main.js"></script>
 </body>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono&display=swap');
 
+/* Base reset and typography */
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +8,43 @@
   font-family: "Roboto mono", sans-serif;
 }
 
-nav{
-  display: flex;
-  padding: 50px;
-  background-color: beige;
-  justify-content: center;
+/* Global layout tokens */
+body {
+  background: #fdfaf3;
+  color: #111;
+  line-height: 1.6;
+}
+
+main {
+  display: block;
+}
+
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+/* Content width container */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Navigation bar */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 24px;
+  background-color: beige;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+nav .page-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 nav ul{
@@ -33,6 +63,10 @@ nav ul li a{
   font-weight: bold;
 }
 
+nav ul li a:hover,
+nav ul li a:focus-visible {
+  color: #005a9c;
+}
 
 nav ul li::after{
   display: inline;
@@ -48,31 +82,37 @@ nav ul li:last-child::after {
   position: relative;
   width: 100%;
   overflow: hidden;
-  left: -7px;
 }
 
+/* Hero image and overlayed intro text */
 .image img{
   object-fit: cover;
   width: 100%;
+  height: 520px;
+  display: block;
+  filter: brightness(0.7);
+  border: 3px solid #fff;
 }
 
 .introtxt{
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   white-space: nowrap;
   padding: 0 1rem;
   z-index: 2;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.45);
 }
 
 
+/* Typed text cursor */
 #typed-text {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: yellow;
   border-right: 2px solid yellow;
   padding-left: 5px;
@@ -85,11 +125,11 @@ nav ul li:last-child::after {
 }
 
 
-
+/* About section styles */
 .about-section {
   background-color: #111;
   color: white;
-  padding: 60px 40px;
+  padding: 80px 24px 90px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
@@ -111,7 +151,7 @@ nav ul li:last-child::after {
 .currently {
   font-size: 1.3rem;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-weight: bold;
 }
 
@@ -125,20 +165,57 @@ nav ul li:last-child::after {
   padding-left: 20px;
 }
 
-.AboutSectiontxst, .Awardsection {
-  padding-left: 20px;
+.section {
+  padding: 60px 24px;
+}
+
+/* Optional light / dark section modifiers */
+.section.light {
+  background: #fffef8;
+}
+
+.section.dark {
+  background: #111;
+  color: #f5f5f5;
+}
+
+.section .section-title {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  text-decoration: underline;
+}
+
+/* Education / work blocks */
+.AboutSectiontxst, .Awardsection, .WorkSection {
+  padding: 0 20px;
 }
 
 .txstimg {
-  width: 300px;
+  width: 260px;
   float: right;
+  margin: 0 0 18px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
 }
 
 
+.AboutSectiontxst h1 {
+  font-size: 2.2rem;
+}
 
+.AboutSectiontxst h3,
+.AboutSectiontxst h4 {
+  margin-bottom: 8px;
+}
+
+.AboutSectiontxst p {
+  max-width: 900px;
+}
+
+/* Social links row */
 .social-icons {
   text-align: center;
-  margin-top: 40px;
+  margin: 32px auto 20px;
 }
 
 .social-icons a {
@@ -146,12 +223,14 @@ nav ul li:last-child::after {
   font-size: 2rem;
   color: #333;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
   color: #0077b5; 
 }
 
+/* Photo gallery cards */
 .pictures {
   display:flex;
   flex-wrap: wrap;
@@ -161,13 +240,14 @@ nav ul li:last-child::after {
 }
 
 .photos {
-  width: 500px;
-  border: 2px;
+  width: 320px;
+  border: 2px solid #e5e2d6;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   text-align: center;
+  background: #fff;
 }
 
 .photos:hover{
@@ -176,7 +256,8 @@ nav ul li:last-child::after {
 
 .photos img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
   border-bottom: 1px solid #ccc;
 }
 
@@ -184,4 +265,59 @@ nav ul li:last-child::after {
   padding: 10px;
   font-size: 1rem;
   color: #333;
+}
+
+/* Lists within experience/awards */
+.WorkSection ul,
+.Awardsection ul {
+  padding-left: 20px;
+}
+
+.WorkSection li,
+.Awardsection li {
+  margin-bottom: 10px;
+}
+
+.WorkSection h2,
+.Awardsection h2 {
+  margin-bottom: 10px;
+}
+
+.WorkSection h3,
+.WorkSection h4,
+.Awardsection h3,
+.Awardsection h4 {
+  margin-bottom: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  nav {
+    padding: 18px 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .introtxt,
+  #typed-text {
+    font-size: 2.4rem;
+  }
+
+  .image img {
+    height: 420px;
+  }
+
+  .txstimg {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .photos {
+    width: 100%;
+    max-width: 360px;
+  }
 }

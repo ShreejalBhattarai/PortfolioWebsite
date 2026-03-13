@@ -1,13 +1,15 @@
+// Simple typewriter loop for the hero subtitle
 const words = ["an engineering student", "a son and a brother", "an art enthusiast", "a fellow naive human"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const typedText = document.getElementById("typed-text");
 const typingSpeed = 100;
 const deletingSpeed = 60;
 const delayBetweenWords = 1500;
+let typedText = null;
 
 function type() {
+  if (!typedText) return;
   const currentWord = words[wordIndex];
 
   if (isDeleting) {
@@ -31,6 +33,8 @@ function type() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  typedText = document.getElementById("typed-text");
+  if (!typedText) return;
   type();
 });
 
