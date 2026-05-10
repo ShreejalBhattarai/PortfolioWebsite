@@ -6,53 +6,93 @@
   <meta name="description" content="Portfolio of Shreejal Bhattarai - electrical and computer engineering student.">
   <title>Shreejal Bhattarai</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="photos/logo.png" type="image/png">
 </head>
-<body>
-  <!-- Global navigation shared across pages -->
-  <header>
-    <nav>
-      <div class="page-wrapper">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1" target="_blank" rel="noopener">Blogs</a></li>
-          <li><a href="work.html">Work Experience</a></li>
-          <li><a href="life.html">Life</a></li>
-          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+<body class="minimal">
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="site-nav-menu">
+          <li class="is-active"><a href="index.html">01 : About</a></li>
+          <li><a href="education.html">02 : Education</a></li>
+          <li><a href="work.html">03 : Work</a></li>
+          <li><a href="life.html">04 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">05 : Resume</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero with background image and typed intro line -->
-    <section class="image" aria-label="Introduction">
-      <img src="photos/background.jpg" id="image" alt="Abstract background with Shreejal Bhattarai">
-      <div class="introtxt">
-        <span>Hi! I am Shreejal,<br> </span>
-        <span id="typed-text"></span>
+  <main class="page-main">
+    <div class="hero-full-container background-image-container white-text-container" style="background-image: url('photos/background.jpg')" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-full-wrapper">
+          <div class="text-content">
+            <h1>Hello, I am <br>
+              <span id="typed-text"></span>
+            </h1>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- About blurb and current focus list -->
-    <section class="about-section">
-      <div class="page-wrapper">
-        <h1 class="greeting">Hi there!</h1>
-
-        <p class="about-text">
-          My name is Shreejal Bhattarai. I am a Junior at Texas State University and have developed a keen passion towards computers, logic, and electronics. I am interested in Microprocessors, Digital Design, Analog Design, Microcontrollers, Embedded and Quantum Electronics. 
-        </p>
-
-        <p class="currently">Currently, I am:</p>
-        <ul class="about-list">
-          <li>Conducting research on the electronic characterization of quantum devices, exploring how quantum systems behave at the edges of what we can measure and understand.</li>
-          <li>Continuously expanding my programming skills, picking up new tools and languages that help me bridge the gap between hardware and software.</li>
-          <li>Seeking genuine connections with people who care about building something meaningful, and hoping to leave a positive mark on the lives I cross paths with.</li>
-        </ul>
+    <div class="container">
+      <div class="content-grid">
+        <div class="template-example">
+          <h2 class="template-title-example">Hi there!</h2>
+          <p>
+            My name is Shreejal Bhattarai. I am a junior at Texas State University and have developed a keen passion for computers, logic, and electronics.
+            I am interested in microprocessors, digital design, analog design, microcontrollers, embedded systems, and quantum electronics.
+          </p>
+          <p><strong>Currently, I am:</strong></p>
+          <ul>
+            <li>Conducting research on the electronic characterization of quantum devices, exploring how quantum systems behave at the edges of what we can measure and understand.</li>
+            <li>Continuously expanding my programming skills, picking up new tools and languages that help me bridge the gap between hardware and software.</li>
+            <li>Seeking genuine connections with people who care about building something meaningful, and hoping to leave a positive mark on the lives I cross paths with.</li>
+          </ul>
+        </div>
+        <div class="template-example">
+          <h2 class="template-title-example">Links</h2>
+          <ul class="list-icons">
+            <li>
+              <span class="fa-icon">
+                <a href="https://github.com/ShreejalBhattarai" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </span>
+            </li>
+            <li>
+              <span class="fa-icon">
+                <a href="https://www.linkedin.com/in/shreejalbhattarai/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </span>
+            </li>
+            <li>
+              <span class="fa-icon">
+                <a href="https://www.instagram.com/__shreejal.bhattarai/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </span>
+            </li>
+          </ul>
+          <p class="links-email">
+            <span class="fa-icon" style="vertical-align: middle"><i class="fas fa-envelope"></i></span>
+            <a href="mailto:shreejalbhattarai13@gmail.com">shreejalbhattarai13@gmail.com</a>
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
+
+  <footer class="footer-container">
+    <div class="container">
+      <p>Electrical &amp; computer engineering · Texas State University</p>
+      <p>&copy; Shreejal Bhattarai 2026</p>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>

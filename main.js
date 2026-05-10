@@ -1,5 +1,11 @@
-// Simple typewriter loop for the hero subtitle
-const words = ["an engineering student", "a son and a brother", "an art enthusiast", "a fellow naive human"];
+// Hero typewriter (cycles name + roles, Kylie-style)
+const words = [
+  "Shreejal Bhattarai",
+  "an electrical & computer engineering student",
+  "a quantum device researcher",
+  "an art enthusiast",
+  "an aspiring leader",
+];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -32,9 +38,19 @@ function type() {
   }
 }
 
+function initNavToggle() {
+  const toggle = document.querySelector(".nav-toggle");
+  const menu = document.getElementById("site-nav-menu");
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener("click", () => {
+    const open = menu.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   typedText = document.getElementById("typed-text");
-  if (!typedText) return;
-  type();
+  if (typedText) type();
+  initNavToggle();
 });
-

@@ -3,74 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work Experience</title>
+  <title>Work — Shreejal Bhattarai</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="photos/logo.png" type="image/png">
 </head>
-<body>
-  <!-- Shared navigation -->
-  <header>
-    <nav>
-      <div class="page-wrapper">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1" target="_blank" rel="noopener">Blogs</a></li>
-          <li><a href="work.html">Work Experience</a></li>
-          <li><a href="life.html">Life</a></li>
-          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+<body class="minimal">
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="site-nav-menu">
+          <li><a href="index.html">01 : About</a></li>
+          <li><a href="education.html">02 : Education</a></li>
+          <li class="is-active"><a href="work.html">03 : Work</a></li>
+          <li><a href="life.html">04 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">05 : Resume</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="page-wrapper">
-    <!-- Work and research timeline -->
-    <div class="WorkSection section light">
-      <h2><u>Work & Research Experience</u></h2>
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">Work &amp; Research Experience</h1>
 
-      <h3><b>Undergraduate Research Assistant – NSF PREM Program</b></h3>
-      <h4>Texas State University | Jan 2025 – Present</h4>
-      <ul>
-        <li>Designed and implemented an automated electrical characterization pipeline for single-electron transistors using Python, QCoDeS, and Keithley 2400 Source Measurement Units.</li>
-        <li>Integrated a custom function generator with SMU control for gated voltage biasing, reducing hardware cost and enabling flexible experimental control.</li>
-        <li>Performed nanoscale device characterization using Atomic Force Microscopy (AFM) to study semiconductor device behavior.</li>
-        <li>Replaced proprietary measurement software with fully open-source Python tools, creating a reproducible and extensible measurement workflow.</li>
-      </ul>
+      <div class="WorkSection section light">
+        <div class="experience-box">
+          <h3><b>Undergraduate Research Assistant – NSF PREM Program</b></h3>
+          <h4>Texas State University | Jan 2025 – Present</h4>
+          <ul>
+            <li>Designed and implemented an automated electrical characterization pipeline for single-electron transistors using Python, QCoDeS, and Keithley 2400 Source Measurement Units.</li>
+            <li>Integrated a custom function generator with SMU control for gated voltage biasing, reducing hardware cost and enabling flexible experimental control.</li>
+            <li>Performed nanoscale device characterization using Atomic Force Microscopy (AFM) to study semiconductor device behavior.</li>
+            <li>Replaced proprietary measurement software with fully open-source Python tools, creating a reproducible and extensible measurement workflow.</li>
+          </ul>
+        </div>
 
-      <h3><b>Undergraduate Researcher – Medical Imaging & Machine Learning</b></h3>
-      <h4>Texas State University | Aug 2024 – Present</h4>
-      <ul>
-        <li>Developed a ResNet50-based deep learning model trained on 500+ DXA medical scans for automated bone density analysis.</li>
-        <li>Implemented data augmentation, L2 regularization, early stopping, and learning-rate scheduling to improve model robustness on limited clinical datasets.</li>
-        <li>Collaborated with radiologists and healthcare researchers to evaluate model accuracy and ensure clinically meaningful results.</li>
-      </ul>
+        <div class="experience-box">
+          <h3><b>Undergraduate Researcher – Medical Imaging & Machine Learning</b></h3>
+          <h4>Texas State University | Aug 2024 – Present</h4>
+          <ul>
+            <li>Developed a ResNet50-based deep learning model trained on 500+ DXA medical scans for automated bone density analysis.</li>
+            <li>Implemented data augmentation, L2 regularization, early stopping, and learning-rate scheduling to improve model robustness on limited clinical datasets.</li>
+            <li>Collaborated with radiologists and healthcare researchers to evaluate model accuracy and ensure clinically meaningful results.</li>
+          </ul>
+        </div>
 
-      <h3><b>Secretary – IEEE Texas State University Student Chapter</b></h3>
-      <h4>Texas State University | Aug 2024 – Present</h4>
-      <ul>
-        <li>Managed administrative operations, meeting records, and internal communications for a 150+ member engineering organization.</li>
-        <li>Coordinated technical talks, mentorship sessions, and workshops by inviting industry engineers and alumni from companies such as Tesla and Google.</li>
-        <li>Organized STEM outreach programs for K–12 students, supporting hands-on engineering activities and the Destination Imagination competition.</li>
-        <li>Represented the chapter at the IEEE Central Texas Section Annual Meeting and coordinated industry site visits and technical tours.</li>
-      </ul>
+        <div class="experience-box">
+          <h3><b>Secretary – IEEE Texas State University Student Chapter</b></h3>
+          <h4>Texas State University | April 2025 – April 2026</h4>
+          <ul>
+            <li>Managed administrative operations, meeting records, and internal communications for a 150+ member engineering organization.</li>
+            <li>Coordinated technical talks, mentorship sessions, and workshops by inviting industry engineers and alumni from companies such as Tesla and Google.</li>
+            <li>Organized STEM outreach programs for K–12 students, supporting hands-on engineering activities and the Destination Imagination competition.</li>
+            <li>Represented the chapter at the IEEE Central Texas Section Annual Meeting and coordinated industry site visits and technical tours.</li>
+          </ul>
+        </div>
 
-      <h3><b>Undergraduate Teaching Assistant – Physics Department</b></h3>
-      <h4>Texas State University | Aug 2024 – Present</h4>
-      <ul>
-        <li>Supported laboratory instruction for 500+ students across multiple physics lab sections involving instrumentation and experimental data analysis.</li>
-        <li>Guided students in data acquisition and analysis using LabVIEW, LoggerPro, Python, and MATLAB.</li>
-        <li>Developed real-time sensor visualization tools and automated analysis workflows to improve laboratory efficiency and learning outcomes.</li>
-      </ul>
+        <div class="experience-box">
+          <h3><b>Undergraduate Teaching Assistant – Physics Department</b></h3>
+          <h4>Texas State University | Aug 2024 – Present</h4>
+          <ul>
+            <li>Supported laboratory instruction for 500+ students across multiple physics lab sections involving instrumentation and experimental data analysis.</li>
+            <li>Guided students in data acquisition and analysis using LabVIEW, LoggerPro, Python, and MATLAB.</li>
+            <li>Developed real-time sensor visualization tools and automated analysis workflows to improve laboratory efficiency and learning outcomes.</li>
+          </ul>
+        </div>
 
-      <h3><b>SLAC Mentor & Supplemental Instruction Leader</b></h3>
-      <h4>Texas State University | Jan 2024 – Present</h4>
-      <ul>
-        <li>Mentored over 300 first-year engineering students in mathematics, physics, and circuits through collaborative problem-solving sessions.</li>
-        <li>Designed structured review sessions and interactive learning activities that improved section GPA by approximately 45%.</li>
-        <li>Provided guidance on academic planning, time management, and professional development for early-stage engineering students.</li>
-      </ul>
+        <div class="experience-box">
+          <h3><b>SLAC Mentor & Supplemental Instruction Leader</b></h3>
+          <h4>Texas State University | Jan 2024 – Present</h4>
+          <ul>
+            <li>Mentored over 300 first-year engineering students in mathematics, physics, and circuits through collaborative problem-solving sessions.</li>
+            <li>Designed structured review sessions and interactive learning activities that improved section GPA by approximately 45%.</li>
+            <li>Provided guidance on academic planning, time management, and professional development for early-stage engineering students.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </main>
+
+  <footer class="footer-container">
+    <div class="container">
+      <p>Electrical &amp; computer engineering · Texas State University</p>
+      <p>&copy; Shreejal Bhattarai 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
-

@@ -4,87 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
+  <title>Education — Shreejal Bhattarai</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="photos/logo.png" type="image/png">
 </head>
 
-<body>
+<body class="minimal">
 
-  <!-- Shared navigation -->
-  <header>
-    <nav>
-      <div class="page-wrapper">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1" target="_blank" rel="noopener">Blogs</a></li>
-          <li><a href="work.html">Work Experience</a></li>
-          <li><a href="life.html">Life</a></li>
-          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="site-nav-menu">
+          <li><a href="index.html">01 : About</a></li>
+          <li class="is-active"><a href="education.html">02 : Education</a></li>
+          <li><a href="work.html">03 : Work</a></li>
+          <li><a href="life.html">04 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">05 : Resume</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="page-wrapper">
-    <!-- Degree and coursework summary -->
-    <section class="AboutSectiontxst section light">
-      <img src="photos/txst.png" alt="Texas State University logo" class="txstimg">
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">Education</h1>
 
-      <h1><b>Texas State University</b></h1>
-      <h4>San Marcos, Texas, United States</h4>
+      <div class="EducationSection section light">
+        <div class="experience-box">
+          <div class="education-degree-header">
+            <img src="photos/txst.png" alt="Texas State University logo" class="txstimg">
+            <div class="education-degree-body">
+              <h3><b>Bachelor in Electrical Engineering, Concentration in Computer Engineering</b></h3>
+              <h4>Texas State University | San Marcos, Texas, United States · Minor in Applied Mathematics</h4>
+            </div>
+          </div>
 
-      <h3><b>Bachelor in Electrical Engineering, Concentration in Computer Engineering</b></h3>
-      <h4>Minor in Applied Mathematics</h4>
+          <hr class="education-coursework-divider">
 
-      <h4><u>Relevant Coursework</u></h4>
-      <p>
-        Circuits I, II, Digital Logic, Microprocessors, Computer Architecture, Linear Algebra,
-        Differential Equations, Calculus I, II, III, Digital Design using Hardware Description
-        Language, Microelectronics, Signals and Systems, Data Structures and Algorithms.
-      </p>
-    </section>
+          <h4><b>Relevant Coursework</b></h4>
+          <p class="education-coursework-sub">Texas State University · Undergraduate program</p>
+          <ul>
+            <li>Circuits I, II; Digital Logic; Microprocessors; Computer Architecture</li>
+            <li>Linear Algebra; Differential Equations; Calculus I, II, III</li>
+            <li>Digital Design using Hardware Description Language; Microelectronics; Signals and Systems</li>
+            <li>Data Structures and Algorithms</li>
+          </ul>
+        </div>
 
-    <!-- Awards / scholarships list -->
-    <section class="Awardsection section light">
-      <h2><u>Awards & Honors</u></h2>
-      <ul>
-        <li>
-          <strong>Quantum Rising Star – QS3 Program, Rice University Ken Kennedy Institute</strong><br>
-          Selected to present quantum computing research and recognized as an emerging undergraduate researcher. Awarded travel support for poster presentation.
-        </li>
-        <li>
-          <strong>Larry Whittington Endowment Award</strong><br>
-          Competitive award recognizing academic excellence and contributions to College of Science and Engineering at Texas State University.
-        </li>
-        <li>
-          <strong>U.N. and Praja Pandey Endowed Electrical Engineering Scholarship</strong><br>
-          From late Dr. Raghavendra Pandey's Family towards exceptional academic performance and leadership in electrical engineering.
-        </li>
-        <li>
-          <strong>Brian Wong Endowed Electrical Engineering Scholarship</strong><br>
-          From Mr. Brian Wong towards exceptional academic performance and leadership in Electrical Engineering.
-        </li>
-        <li>
-          <strong>Texas State Merit Scholarship</strong><br>
-          Awarded the Texas State Merit Scholarship covering Tuition, recognizing academic achievement, leadership, and research engagement at the time of admission.
-        </li>
-        <li>
-          <strong>3rd Place – Texas State Datathon</strong><br>
-          Completed a data analysis project examining 20,000+ student reviews to identify systemic biases in teaching evaluations using Python-based statistical analysis.
-        </li>
-        <li>
-          <strong>President’s List & Dean’s List</strong><br>
-          Maintained a semester GPA of 4.0 across all semesters, earning recognition on the President’s List and Dean’s List for academic excellence.
-        </li>
-        <li>
-          <strong>United Nations Office for Outer Space Affairs Recognition</strong><br>
-          Selected as a scholar and invited to participate in a fully funded academic program in Vienna, Austria focused on space science and international collaboration.
-        </li>
-      </ul>
-    </section>
+        <div class="experience-box">
+          <h3><b>Awards &amp; Honors</b></h3>
+          <h4>Scholarships, competitions &amp; recognition</h4>
+          <ul>
+            <li>
+              <strong>Quantum Rising Star – QS3 Program, Rice University Ken Kennedy Institute</strong><br>
+              Selected to present quantum computing research and recognized as an emerging undergraduate researcher. Awarded travel support for poster presentation.
+            </li>
+            <li>
+              <strong>Larry Whittington Endowment Award</strong><br>
+              Competitive award recognizing academic excellence and contributions to College of Science and Engineering at Texas State University.
+            </li>
+            <li>
+              <strong>U.N. and Praja Pandey Endowed Electrical Engineering Scholarship</strong><br>
+              From late Dr. Raghavendra Pandey's Family towards exceptional academic performance and leadership in electrical engineering.
+            </li>
+            <li>
+              <strong>Brian Wong Endowed Electrical Engineering Scholarship</strong><br>
+              From Mr. Brian Wong towards exceptional academic performance and leadership in Electrical Engineering.
+            </li>
+            <li>
+              <strong>Texas State Merit Scholarship</strong><br>
+              Awarded the Texas State Merit Scholarship covering Tuition, recognizing academic achievement, leadership, and research engagement at the time of admission.
+            </li>
+            <li>
+              <strong>3rd Place – Texas State Datathon</strong><br>
+              Completed a data analysis project examining 20,000+ student reviews to identify systemic biases in teaching evaluations using Python-based statistical analysis.
+            </li>
+            <li>
+              <strong>President’s List &amp; Dean’s List</strong><br>
+              Maintained a semester GPA of 4.0 across all semesters, earning recognition on the President’s List and Dean’s List for academic excellence.
+            </li>
+            <li>
+              <strong>United Nations Office for Outer Space Affairs Recognition</strong><br>
+              Selected as a scholar and invited to participate in a fully funded academic program in Vienna, Austria focused on space science and international collaboration.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer class="footer-container">
+    <div class="container">
+      <p>Electrical &amp; computer engineering · Texas State University</p>
+      <p>&copy; Shreejal Bhattarai 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

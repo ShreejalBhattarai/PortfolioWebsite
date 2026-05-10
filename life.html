@@ -3,99 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life</title>
+  <title>Life — Shreejal Bhattarai</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="photos/logo.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <!-- Shared navigation -->
-  <header>
-    <nav>
-      <div class="page-wrapper">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="https://www.blogger.com/blog/posts/4127656993305075570?bpli=1&pli=1" target="_blank" rel="noopener">Blogs</a></li>
-          <li><a href="work.html">Work Experience</a></li>
-          <li><a href="life.html">Life</a></li>
-          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+<body class="minimal">
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="site-nav-menu">
+          <li><a href="index.html">01 : About</a></li>
+          <li><a href="education.html">02 : Education</a></li>
+          <li><a href="work.html">03 : Work</a></li>
+          <li class="is-active"><a href="life.html">04 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">05 : Resume</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="page-wrapper">
-    <!-- Social links row -->
-    <div class="social-icons">
-      <a href="https://github.com/ShreejalBhattarai" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/shreejalbhattarai/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/__shreejal.bhattarai/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:shreejalbhattarai13@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">Life</h1>
+
+      <div class="album-admin album-admin--hidden" id="album-admin-panel" hidden>
+        <h2>Edit album (owner)</h2>
+        <p>
+          Add or edit photos below. Everything is stored in <strong>this browser only</strong> (localStorage).
+          Uploaded images are embedded in that storage—very large files may fill the quota; use reasonably sized JPG/PNG.
+          Use Export backup to save a JSON file you can re-import later or on another device after transfer.
+        </p>
+        <div class="album-admin-actions">
+          <input type="file" id="album-file-input" accept="image/*" multiple aria-label="Add photos to album">
+          <button type="button" class="album-btn" id="album-export">Export backup</button>
+          <label class="album-btn album-btn--file">
+            Import backup
+            <input type="file" id="album-import-input" accept="application/json,.json" hidden>
+          </label>
+          <button type="button" class="album-btn danger" id="album-restore-defaults">Reset to defaults</button>
+          <button type="button" class="album-btn" id="album-lock-editor">Lock editor (view-only)</button>
+        </div>
+      </div>
+
+      <section class="pictures" id="life-album" aria-label="Photo album"></section>
     </div>
-
-    <!-- Photo gallery cards -->
-    <section class="pictures">
-      <div class="photos">
-        <img src="photos/googlevisit.png" alt="Visiting Google in Spring 2025">
-        <p>A snap from Google visit, Spring 2025.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/friends_2.png" alt="Friends at Canyon Lake in Winter 2024">
-        <p>Me and friends at Canyon Lake, Winter 2024. </p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/maitidevi.png" alt="Matidevi Temple in Kathmandu">
-        <p>Matidevi Temple, Kathmandu, 2023.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/mtbonnel.png" alt="View from Mt. Bonnell in Austin">
-        <p>Mt. Bonnel, Austin, Spring 2024.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/friends_3.png" alt="Friends at Galveston Beach in Fall 2024">
-        <p>Galveston Beach, Fall 2024.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/pashupati.png" alt="Pashupati Temple in Kathmandu">
-        <p>Pashupati Temple, Kathmandu, 2023.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/sanmarcosriver.png" alt="San Marcos River in Winter 2023">
-        <p>San Marcos River, Winter 2023.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/snow.png" alt="Snowfall experience in San Marcos Winter 2024">
-        <p>My first snowfall experience, Snocalypse, San Marcos, Winter 2024.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/inspiration.png" alt="Roy F. Mitte building in Summer 2025">
-        <p>Roy F. Mitte, San Marcos, Summer 2025.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/piano.png" alt="Playing piano in Spring 2024">
-        <p>Me showing off like I know playing piano, San Marcos, Spring 2024.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/plane_picture.png" alt="On a plane during Winter 2023">
-        <p>My Leap of Faith, Winter 2023, Middle of Nowhere.</p>
-      </div>
-
-      <div class="photos">
-        <img src="photos/blackboard.png" alt="Stopwatch project on blackboard">
-        <p>Stopwatch Project.</p>
-      </div>
-    </section>
   </main>
+
+  <footer class="footer-container">
+    <div class="container">
+      <p>Electrical &amp; computer engineering · Texas State University</p>
+      <p>&copy; Shreejal Bhattarai 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="life.js"></script>
 </body>
 </html>
