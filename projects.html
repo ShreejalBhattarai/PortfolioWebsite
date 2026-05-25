@@ -162,6 +162,114 @@
           </ul>
         </div>
 
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>AI Room Brightness Controller</b></h3>
+              <h4>Raspberry Pi · Mac + Ollama (Mistral) · Python</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/AI_Room_Brightness_Controller" target="_blank" rel="noopener" aria-label="AI Room Brightness Controller on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Raspberry Pi</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">PWM</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">Ollama / Mistral</span>
+          </div>
+          <ul>
+            <li>Built an end-to-end system that controls a Raspberry Pi 3B+ LED over WiFi from a Mac, with a Flask REST server on the Pi driving GPIO18 via hardware PWM.</li>
+            <li>Implemented a manual mode that uses local speech recognition and a locally hosted Mistral LLM (via Ollama) to interpret natural-language commands like "dim it a little" into structured JSON brightness values.</li>
+            <li>Added an automatic mode that samples the Mac camera with OpenCV, computes grayscale room brightness, and inversely modulates the LED so darker rooms get a brighter LED.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Real-Time Audio FFT Visualizer</b></h3>
+              <h4>Python · NumPy · sounddevice · Matplotlib</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/audio_fft_visualiser" target="_blank" rel="noopener" aria-label="Audio FFT Visualizer on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">DSP</span>
+            <span class="project-tag">FFT</span>
+            <span class="project-tag">NumPy</span>
+            <span class="project-tag">Matplotlib</span>
+          </div>
+          <ul>
+            <li>Designed a real-time microphone visualizer that renders the time-domain waveform and frequency spectrum side by side, with automatic fundamental-frequency and harmonic detection.</li>
+            <li>Implemented configurable FFT size, window function (Hann / Hamming / Blackman), gain, frequency range, and a peak-hold overlay with adjustable decay.</li>
+            <li>Architected the project around clean modules — audio engine, plotting widget, and GUI controls — so DSP code can be reused independently of the visualization.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Image Filters for CNNs</b></h3>
+              <h4>C++ · CMake · Image Processing</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/FiltersforCNN" target="_blank" rel="noopener" aria-label="Filters for CNN on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">C++</span>
+            <span class="project-tag">CMake</span>
+            <span class="project-tag">Image Processing</span>
+            <span class="project-tag">CNN</span>
+          </div>
+          <ul>
+            <li>Implemented a collection of classical image-processing filters in C++ — convolution kernels such as Sobel, Gaussian, sharpening, and edge detection — that mirror the early feature-extraction layers of convolutional neural networks.</li>
+            <li>Structured the project with CMake for cross-platform builds and modular filter components so individual kernels can be swapped or extended.</li>
+            <li>Used the project to study how handcrafted convolution kernels relate to learned filters in modern CNN architectures.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Learning Machine Learning — Notebooks</b></h3>
+              <h4>Python · Jupyter · scikit-learn / PyTorch</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/Learning_MachineLearning" target="_blank" rel="noopener" aria-label="Learning Machine Learning on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Jupyter</span>
+            <span class="project-tag">scikit-learn</span>
+            <span class="project-tag">PyTorch</span>
+            <span class="project-tag">Notebooks</span>
+          </div>
+          <ul>
+            <li>An evolving notebook collection documenting my journey through machine-learning fundamentals — regression, classification, clustering, and intro deep-learning workflows.</li>
+            <li>Each notebook focuses on a single concept end-to-end: data loading, preprocessing, model training, evaluation, and a short written reflection on what worked and what didn't.</li>
+            <li>Serves as a personal reference and a transparent record of how I am building intuition for ML alongside my hardware and digital-design work.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </main>
