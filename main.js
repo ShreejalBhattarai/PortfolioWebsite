@@ -1,4 +1,4 @@
-// Hero typewriter (cycles name + roles, Kylie-style)
+// Hero typewriter (cycles name + roles)
 const words = [
   "Shreejal Bhattarai",
   "an electrical & computer engineering student",
@@ -49,8 +49,56 @@ function initNavToggle() {
   });
 }
 
+const THEME_KEY = "portfolioTheme";
+
+function currentTheme() {
+  return document.documentElement.getAttribute("data-theme") === "dark"
+    ? "dark"
+    : "light";
+}
+
+function applyTheme(theme) {
+  if (theme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    const next = theme === "dark" ? "light" : "dark";
+    btn.setAttribute("aria-label", `Switch to ${next} theme`);
+    btn.setAttribute("title", `Switch to ${next} theme`);
+  }
+}
+
+function initThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  applyTheme(currentTheme());
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const next = currentTheme() === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (e) { }
+    applyTheme(next);
+  });
+
+  if (window.matchMedia) {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = (e) => {
+      try {
+        if (localStorage.getItem(THEME_KEY)) return;
+      } catch (err) { }
+      applyTheme(e.matches ? "dark" : "light");
+    };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   typedText = document.getElementById("typed-text");
   if (typedText) type();
   initNavToggle();
+  initThemeToggle();
 });
