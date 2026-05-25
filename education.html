@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education — Shreejal Bhattarai</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('portfolioTheme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) { }
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="photos/logo.png" type="image/png">
 </head>
 
@@ -24,9 +34,14 @@
           <li><a href="index.html">01 : About</a></li>
           <li class="is-active"><a href="education.html">02 : Education</a></li>
           <li><a href="work.html">03 : Work</a></li>
-          <li><a href="life.html">04 : Life</a></li>
-          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">05 : Resume</a></li>
+          <li><a href="projects.html">04 : Projects</a></li>
+          <li><a href="life.html">05 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">06 : Resume</a></li>
         </ul>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle light / dark theme">
+          <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
       </div>
     </nav>
   </header>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Shreejal Bhattarai — embedded systems, digital design, and audio hardware.">
+  <title>Projects — Shreejal Bhattarai</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('portfolioTheme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) { }
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="photos/logo.png" type="image/png">
+</head>
+
+<body class="minimal">
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="container">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="site-nav-menu">
+          <li><a href="index.html">01 : About</a></li>
+          <li><a href="education.html">02 : Education</a></li>
+          <li><a href="work.html">03 : Work</a></li>
+          <li class="is-active"><a href="projects.html">04 : Projects</a></li>
+          <li><a href="life.html">05 : Life</a></li>
+          <li><a href="ShreejalBhattarai_Resume.pdf" target="_blank" rel="noopener">06 : Resume</a></li>
+        </ul>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle light / dark theme">
+          <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-intro">
+        A collection of hardware, embedded, and digital-design projects I have built. Each card links to its GitHub
+        repository where you can find source code, schematics, and documentation.
+      </p>
+
+      <div class="ProjectsSection section light">
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Enigma 2.0: Embedded Cipher System</b></h3>
+              <h4>Raspberry Pi Pico · Bare-metal C · July 2025 – October 2025</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/Enigma-2.0" target="_blank" rel="noopener" aria-label="Enigma 2.0 on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">C</span>
+            <span class="project-tag">PicoSDK</span>
+            <span class="project-tag">UART</span>
+            <span class="project-tag">Shell</span>
+            <span class="project-tag">Cryptography</span>
+          </div>
+          <ul>
+            <li>Built an embedded cryptographic system on Raspberry Pi Pico, implementing the UART protocol for serial communication between host and device.</li>
+            <li>Developed modular bare-metal C code and automated the build process with a shell script, reducing build time by approximately 50%.</li>
+            <li>Used the PicoSDK to implement rotors, reflectors, and a user-friendly terminal-based control interface modeled on the historical Enigma machine.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>256-bit Matrix Processor Engine</b></h3>
+              <h4>SystemVerilog · Custom ISA · January 2025 – May 2025</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/Matrix-Processor-Engine" target="_blank" rel="noopener" aria-label="Matrix Processor Engine on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">SystemVerilog</span>
+            <span class="project-tag">RTL</span>
+            <span class="project-tag">Vivado</span>
+            <span class="project-tag">Digital Design</span>
+          </div>
+          <ul>
+            <li>Designed and verified a 256-bit matrix processing engine in SystemVerilog with a custom ALU and instruction set tailored to matrix operations.</li>
+            <li>Implemented modular RTL blocks and validated functionality using Vivado testbenches and waveform analysis.</li>
+            <li>Verified cycle-accurate execution across 15+ directed and randomized test cases covering edge conditions.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Arcade Sound FX Box</b></h3>
+              <h4>Raspberry Pi Pico · MicroPython · December 2025 – January 2026</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai/Arcade-Sound-FX-Box" target="_blank" rel="noopener" aria-label="Arcade Sound FX Box on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">MicroPython</span>
+            <span class="project-tag">PWM</span>
+            <span class="project-tag">GPIO</span>
+            <span class="project-tag">Embedded</span>
+          </div>
+          <ul>
+            <li>Built a standalone audio effects box on Raspberry Pi Pico using MicroPython, with no external audio hardware required.</li>
+            <li>Generated real-time retro arcade sound effects through PWM output, synthesizing waveforms directly on the microcontroller.</li>
+            <li>Interfaced buttons and LEDs with debounced GPIO inputs and synchronized visual feedback to the audio output.</li>
+          </ul>
+        </div>
+
+        <div class="experience-box">
+          <div class="project-header">
+            <div class="project-header-text">
+              <h3><b>Automated SMU Characterization Pipeline</b></h3>
+              <h4>Python · QCoDeS · Keithley 2400 · Jan 2025 – Present</h4>
+            </div>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/ShreejalBhattarai" target="_blank" rel="noopener" aria-label="View related work on GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>Related work</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">QCoDeS</span>
+            <span class="project-tag">Instrumentation</span>
+            <span class="project-tag">Research</span>
+          </div>
+          <ul>
+            <li>Engineered an automated control pipeline for Keithley Source Measurement Units using the QCoDeS framework, reducing manual measurement labor by roughly 90%.</li>
+            <li>Designed a PWM-based pseudo-function generator on Raspberry Pi Pico to replace a commercial unit, saving approximately $2,000 in lab equipment costs.</li>
+            <li>Currently extending the system into an automated DAC-driven sourcing device for Single Electron Transistor (SET) characterization.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-container">
+    <div class="container">
+      <p>Electrical &amp; computer engineering · Texas State University</p>
+      <p>&copy; Shreejal Bhattarai 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
