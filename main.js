@@ -1,7 +1,7 @@
 // Hero typewriter (cycles name + roles)
 const words = [
   "Shreejal Bhattarai",
-  "an electrical & computer engineering student",
+  "an ECE student at Txstate",
   "a quantum device researcher",
   "an art enthusiast",
   "an aspiring leader",

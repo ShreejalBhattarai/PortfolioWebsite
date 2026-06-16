@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Roboto+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
 
 /* --- Theme tokens (light is default) --- */
 :root {
@@ -17,11 +17,11 @@
   --footer-border: #eee;
   --footer-text: #666;
 
-  --nav-bg: #222222;
-  --nav-border: #080808;
-  --nav-link: #9d9d9d;
-  --nav-link-hover: #ffffff;
-  --nav-toggle-border: #333333;
+  --nav-bg: #f5f5f5;
+  --nav-border: #e0e0e0;
+  --nav-link: #555555;
+  --nav-link-hover: #111111;
+  --nav-toggle-border: #cccccc;
 
   --icon-color: #000000;
   --icon-hover: #606060;
@@ -88,7 +88,7 @@ body.minimal {
 
 body,
 p {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans', Roboto, Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.8px;
   line-height: 25px;
@@ -161,7 +161,7 @@ a:focus-visible {
   display: block;
   width: 22px;
   height: 2px;
-  background: #fff;
+  background: var(--nav-link-hover);
   margin: 4px 0;
 }
 
@@ -282,10 +282,10 @@ a:focus-visible {
 }
 
 .hero-full-container h1 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-family: 'IBM Plex Sans', Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
   margin: 0;
-  font-size: clamp(2.35rem, 7.5vw, 4.35rem);
+  font-size: clamp(1.5rem, 4.5vw, 2.75rem);
   line-height: 1.2;
   max-width: 100%;
   word-wrap: break-word;
@@ -293,6 +293,7 @@ a:focus-visible {
   hyphens: auto;
   padding: 0 12px;
   box-sizing: border-box;
+  font-weight: 900;
 }
 
 .hero-full-container .hero-full-wrapper {
@@ -305,13 +306,15 @@ a:focus-visible {
 .hero-full-container .hero-full-wrapper .text-content {
   display: table-cell;
   vertical-align: middle;
-  transform: translateY(-11vh);
+  margin-top: 30px;
+  transform: translateX(20px);
 }
 
 .background-image-container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65% 50%;
+  
 }
 
 .white-text-container h1,
@@ -327,7 +330,7 @@ a:focus-visible {
 }
 
 #typed-text {
-  font-size: inherit;
+  font-size: 1em;
   font-weight: inherit;
   border-right: 3px solid #fff;
   padding-left: 6px;
@@ -819,11 +822,13 @@ a:focus-visible {
 
 @media (max-width: 480px) {
   .hero-full-container h1 {
-    font-size: clamp(1.65rem, 8vw, 2.4rem);
+    font-size: clamp(2rem, 5vw, 1.65rem);
+    font-weight: 900;
   }
 
   .hero-full-container .hero-full-wrapper .text-content {
-    transform: translateY(-8vh);
+    transform: none;
+    text-align: center;
   }
 
   .container {
