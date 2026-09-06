@@ -51,17 +51,14 @@
       <div class="album-admin album-admin--hidden" id="album-admin-panel" hidden>
         <h2>Edit album (owner)</h2>
         <p>
-          Add or edit photos below. Everything is stored in <strong>this browser only</strong> (localStorage).
-          Uploaded images are embedded in that storage—very large files may fill the quota; use reasonably sized JPG/PNG.
-          Use Export backup to save a JSON file you can re-import later or on another device after transfer.
+          Uploads are committed to the GitHub repo under <strong>photos/</strong> and listed in
+          <strong>photos/album.json</strong>, so they are permanent for all visitors after GitHub Pages rebuilds.
+          Unlock asks for a GitHub token with Contents write access (kept in this tab only). Prefer JPG/PNG under 8&nbsp;MB.
         </p>
+        <p class="album-admin-status" id="album-admin-status" role="status" aria-live="polite"></p>
         <div class="album-admin-actions">
           <input type="file" id="album-file-input" accept="image/*" multiple aria-label="Add photos to album">
-          <button type="button" class="album-btn" id="album-export">Export backup</button>
-          <label class="album-btn album-btn--file">
-            Import backup
-            <input type="file" id="album-import-input" accept="application/json,.json" hidden>
-          </label>
+          <button type="button" class="album-btn" id="album-export">Download album.json</button>
           <button type="button" class="album-btn danger" id="album-restore-defaults">Reset to defaults</button>
           <button type="button" class="album-btn" id="album-lock-editor">Lock editor (view-only)</button>
         </div>

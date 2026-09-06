@@ -664,6 +664,21 @@ a:focus-visible {
   margin-bottom: 12px;
 }
 
+.album-admin-status {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.album-admin-status.is-error {
+  color: #c46b6b;
+}
+
+.album-admin.is-busy {
+  opacity: 0.92;
+}
+
 .album-admin-actions {
   display: flex;
   flex-wrap: wrap;
@@ -704,9 +719,19 @@ a:focus-visible {
   background: var(--chip-bg);
 }
 
+.album-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .album-btn.danger {
   border-color: #c9a0a0;
   color: #c46b6b;
+}
+
+.album-empty {
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 .album-card-actions {

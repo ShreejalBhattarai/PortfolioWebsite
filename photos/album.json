@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "def-0",
+      "src": "photos/googlevisit.png",
+      "caption": "A snap from Google visit, Spring 2025.",
+      "alt": "Visiting Google in Spring 2025"
+    },
+    {
+      "id": "def-1",
+      "src": "photos/friends_2.png",
+      "caption": "Me and friends at Canyon Lake, Winter 2024.",
+      "alt": "Friends at Canyon Lake in Winter 2024"
+    },
+    {
+      "id": "def-2",
+      "src": "photos/maitidevi.png",
+      "caption": "Matidevi Temple, Kathmandu, 2023.",
+      "alt": "Matidevi Temple in Kathmandu"
+    },
+    {
+      "id": "def-3",
+      "src": "photos/mtbonnel.png",
+      "caption": "Mt. Bonnel, Austin, Spring 2024.",
+      "alt": "View from Mt. Bonnell in Austin"
+    },
+    {
+      "id": "def-4",
+      "src": "photos/friends_3.png",
+      "caption": "Galveston Beach, Fall 2024.",
+      "alt": "Friends at Galveston Beach in Fall 2024"
+    },
+    {
+      "id": "def-5",
+      "src": "photos/pashupati.png",
+      "caption": "Pashupati Temple, Kathmandu, 2023.",
+      "alt": "Pashupati Temple in Kathmandu"
+    },
+    {
+      "id": "def-6",
+      "src": "photos/sanmarcosriver.png",
+      "caption": "San Marcos River, Winter 2023.",
+      "alt": "San Marcos River in Winter 2023"
+    },
+    {
+      "id": "def-7",
+      "src": "photos/snow.png",
+      "caption": "My first snowfall experience, Snocalypse, San Marcos, Winter 2024.",
+      "alt": "Snowfall experience in San Marcos Winter 2024"
+    },
+    {
+      "id": "def-8",
+      "src": "photos/inspiration.png",
+      "caption": "Roy F. Mitte, San Marcos, Summer 2025.",
+      "alt": "Roy F. Mitte building in Summer 2025"
+    },
+    {
+      "id": "def-9",
+      "src": "photos/piano.png",
+      "caption": "Me showing off like I know playing piano, San Marcos, Spring 2024.",
+      "alt": "Playing piano in Spring 2024"
+    },
+    {
+      "id": "def-10",
+      "src": "photos/plane_picture.png",
+      "caption": "My Leap of Faith, Winter 2023, Middle of Nowhere.",
+      "alt": "On a plane during Winter 2023"
+    },
+    {
+      "id": "def-11",
+      "src": "photos/blackboard.png",
+      "caption": "Stopwatch Project.",
+      "alt": "Stopwatch project on blackboard"
+    }
+  ]
+}
